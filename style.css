@@ -1,0 +1,98 @@
+/* Resetări de bază */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Transformare în cerc */
+    margin: 20px 0;
+    border: 3px solid #000000;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .icon {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #fe5e93; /* Schimbă culoarea la hover */
+  }
+  
+  
+  main {
+    margin-top: 20px;
+  }
+  
+
+ /* Stil pentru containerul link */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: relative;
+    border-bottom: 1px solid #fffefe; /* Linia albă subțire */
+    margin-bottom: 10px;
+  }
+  
+  .link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    position: relative;
+  }
+  
+  .link a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: transparent; /* Elimină linia făcând-o invizibilă */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+  
+  .link a:hover::after {
+    transform: scaleX(1); /* Lărgește linia la hover */
+  }
+  
+  
+  .heart {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
